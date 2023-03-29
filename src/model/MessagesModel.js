@@ -1,7 +1,7 @@
 const Pool = require('../config/db');
 
 const getMessage = (idSender, idReceiver) => {
-    return Pool.query(`SELECT * FROM messages where (id_sender = '${idSender}' AND id_receiver = '${idReceiver}') OR (id_sender = '${idSender}' AND id_receiver = '${idReceiver}') ORDER BY created_at ASC`)
+    return Pool.query(`SELECT * FROM messages where (id_sender = '${idSender}' AND id_receiver = '${idReceiver}') OR (id_sender = '${idReceiver}' AND id_receiver = '${idSender}') ORDER BY created_at ASC`)
 }
 
 const addMessage = (data) => {
