@@ -223,6 +223,17 @@ const usersController = {
 			console.log(error);
 		}
 	},
+
+	profileUser: async (req, res) => {
+		const id = req.payload.id;
+
+		const { rowCount } = await UsersModel.getDetailUsers(id)
+		if (!rowCount) return res.status(403).json({ message: "Token Expired!" })
+
+		const { rows } = await UsersModel.getDetailUsers(id)
+
+		return helperResponse.response(res, rows[0], 200, "Get Profile Success!")
+	}
 }
 
 module.exports = usersController;

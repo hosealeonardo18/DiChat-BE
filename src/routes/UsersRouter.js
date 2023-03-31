@@ -14,5 +14,6 @@ router.delete('/:id', protect, UsersController.deleteUsers);
 router.post('/auth/register', UsersController.registerUsers);
 router.post('/auth/login', UsersController.loginUsers);
 router.post('/auth/refresh-token', UsersController.refreshTokenUsers);
+router.get('/auth/profile', protect, UsersController.profileUser);
 
 module.exports = router;
