@@ -2,7 +2,7 @@ require('dotenv').config()
 const express = require('express');
 const createError = require('http-errors')
 const cors = require('cors')
-const port = process.env.PGPORT;
+const port = process.env.PORT;
 const mainRouter = require('./src/routes/IndexRouter')
 const response = require('./src/helper/common')
 const { Server } = require('socket.io')
