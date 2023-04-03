@@ -2,7 +2,7 @@ require('dotenv').config()
 const express = require('express');
 const createError = require('http-errors')
 const cors = require('cors')
-const port = process.env.PORT;
+const port = process.env.PGPORT;
 const mainRouter = require('./src/routes/IndexRouter')
 const response = require('./src/helper/common')
 const { Server } = require('socket.io')
@@ -72,6 +72,9 @@ app.use((err, req, res, next) => {
     next()
 })
 
+// httpServer.listen(port, () => {
+//     console.log('Server Running on Port ' + port);
+// });
 httpServer.listen(port, () => {
     console.log('Server Running on Port ' + port);
 });
