@@ -14,7 +14,7 @@ const httpServer = createServer(app)
 // socket io
 const io = new Server(httpServer, {
     cors: {
-        origin: ['http://localhost:3000']
+        origin: ['http://localhost:3000', 'https://dichat-be.up.railway.app']
     }
 });
 
