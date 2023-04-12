@@ -23,8 +23,8 @@ const ContactsController = {
 			if (!rowCountUser.rowCount) return res.json({ message: `User Not Found!` })
 
 			// cek id user in table contact
-			const { rowCount } = await ContactsModel.findId(id_people)
-			if (rowCount) return res.json({ message: `Users have been added!` })
+			// const { rowCount } = await ContactsModel.findId(idUser, id_people)
+			// if (rowCount) return res.json({ message: `Users have been added!` })
 
 			const id = uuidv4();
 			const data = {

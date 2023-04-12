@@ -41,9 +41,9 @@ const findIdUserContact = (id) => {
     });
 };
 
-const findId = (id) => {
+const findId = (idUser, id_people) => {
     return new Promise((resolve, reject) => {
-        Pool.query(`SELECT id_people FROM contacts WHERE id_people='${id}'`, (error, result) => {
+        Pool.query(`SELECT id_people FROM contacts WHERE id_user='${idUser}'`, (error, result) => {
             if (!error) {
                 resolve(result);
             } else {
