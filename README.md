@@ -1,3 +1,24 @@
+<br />
+<p align="center">
+<div align="center">
+  <img height="150" <img src="https://res.cloudinary.com/dklpoff31/image/upload/v1681702183/Asset_1_pwbeti.png" alt="logo" border="0"/>
+</div>
+  <h3 align="center">DiChat</h3>
+  <p align="center">
+    <a href="https://github.com/hosealeonardo18/DiChat-BE"><strong>Explore the docs »</strong></a>
+    <br />
+    <a href="https://dichat.vercel.app/">View Demo</a>
+  </p>
+</p>
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+The Realtime Chat website with the name DiChat is an online platform that allows users to chat in real-time with other users who are connected to the application. DiChat was developed using React.js and Redux frontend technologies to optimize display performance and efficiency as well as state management. In addition, this website uses the socket.io library to implement the realtime chat feature.
+
+On the backend, DiChat uses Express.js technology which functions as a server to manage data retrieved from Cloudinary. Cloudinary functions as an image data store so that it allows users to easily send and view images from every message sent.
+
 # Documentation Basic Backend
 
 ## Third Party Module
@@ -82,3 +103,11 @@
 ```bash
   npm run lint
 ```
+
+## Related Project
+
+:rocket: [`Frontend DiChat Realtime Chat`](https://github.com/hosealeonardo18/DiChat-FE)
+
+:rocket: [`Backend DiChat Realtime Chat`](https://github.com/hosealeonardo18/DiChat-BE)
+
+:rocket: [`Demo DiChat Realtime Chat`](https://dichat.vercel.app/)
