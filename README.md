@@ -67,20 +67,29 @@ On the backend, DiChat uses Express.js technology which functions as a server to
 
 | Deployment                       | Database                                    |
 | :------------------------------- | :------------------------------------------ |
-| [Railway](https://railway.app/)  | [postgreSQL](https://www.postgresql.org/)   |
-| [Cyclic](https://www.cyclic.sh/) | [ElephantSQL](https://www.elephantsql.com/) |
+| [Railway](https://dichat-be.up.railway.app/)  | [postgreSQL](https://www.postgresql.org/)   |
 
-- [API Product](https://blanjaolshopbackend-production.up.railway.app/product)
-- [API Seller](https://blanjaolshopbackend-production.up.railway.app/seller)
-- [API Customer](https://blanjaolshopbackend-production.up.railway.app/customer)
-- [API Categories](https://blanjaolshopbackend-production.up.railway.app/categories)
+- [API Login](https://dichat-be.up.railway.app/user/auth/login)
+- [API Register](https://dichat-be.up.railway.app/user/auth/register)
+- [API Profile User](https://dichat-be.up.railway.app/user/auth/profile)
+- [API Refresh Token](https://dichat-be.up.railway.app/user/auth/refresh-token)
 
-## Access API Deploy by Cyclic
+- [API Get All User](https://dichat-be.up.railway.app/user)
+- [API Get Detail User](https://dichat-be.up.railway.app/user/${id})
+- [API Update User](https://dichat-be.up.railway.app/user/auth/${id})
+- [API Delete User](https://dichat-be.up.railway.app/user/auth/${id})
 
-- [API Product](https://wide-eyed-gilet-wasp.cyclic.app/product)
-- [API Seller](https://wide-eyed-gilet-wasp.cyclic.app/seller)
-- [API Customer](https://wide-eyed-gilet-wasp.cyclic.app/customer)
-- [API Categories](https://wide-eyed-gilet-wasp.cyclic.app/categories)
+- [API Contact](https://dichat-be.up.railway.app/contact)
+- [API Add Contact](https://dichat-be.up.railway.app/contact)
+- [API Delete Contact](https://dichat-be.up.railway.app/contact/${id})
+
+- [API Contact](https://dichat-be.up.railway.app/message/${id_receiver})
+- [API Add Contact](https://dichat-be.up.railway.app/message/${id_receiver})
+- [API Delete Contact](https://dichat-be.up.railway.app/message/${id_message})
+
+API endpoint list are also available as published postman documentation
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/24895506-cafe7c8b-ec35-4f76-bc6a-54125bf44cf9?action=collection%2Ffork&collection-url=entityId%3D24895506-cafe7c8b-ec35-4f76-bc6a-54125bf44cf9%26entityType%3Dcollection%26workspaceId%3D25508b07-7224-4d37-90f4-034a0c8d7342)
 
 ## Authors
 
